@@ -4,7 +4,7 @@
 
 ## About App
 
--  This app will show you all the app which installed in your android os (System and Non-System Apps) with package name and        installed data.
+-  This app will show you all the app which installed in your android os (System and Non-System Apps) with package name and installed date.
 
 ## About implementation
 
