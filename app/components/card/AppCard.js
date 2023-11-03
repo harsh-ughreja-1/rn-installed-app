@@ -1,6 +1,5 @@
 import { Image, Pressable, Text, View } from "react-native";
 import styles from "./AppCardStyles"
-import { getInstallDate } from "../../utils";
 
 export const AppCard = ({
     appDetails
@@ -13,7 +12,7 @@ export const AppCard = ({
                 <Text style={styles.appName} numberOfLines={1}>{appDetails?.name}</Text>
                 <Text style={styles.appPackageName} numberOfLines={1}>{appDetails?.packageName}</Text>
                 <View style={styles.appInstallDate}>
-                    <Text style={styles.appInstallDateText}>Date: {getInstallDate(appDetails?.installDate)}</Text>
+                    <Text style={styles.appInstallDateText}>Date: {appDetails?.installDate}</Text>
                 </View>
             </View>
         </Pressable>

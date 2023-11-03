@@ -110,7 +110,7 @@ public class InstalledAppsModule extends ReactContextBaseJavaModule {
     private String getInstallDate(String packageName) {
         try {
             long installTime = getReactApplicationContext().getPackageManager().getPackageInfo(packageName, 0).firstInstallTime;
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy"); // yyyy-MM-dd HH:mm:ss
             return dateFormat.format(installTime);
         } catch (Exception e) {
             e.printStackTrace();

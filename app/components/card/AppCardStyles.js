@@ -29,8 +29,6 @@ const styles = StyleSheet.create({
     appInstallDate: {
         flexDirection: "row",
         alignItems: "center",
-        marginTop: 0,
-        flex: 1,
     },
     appInstallDateText: {
         color: Colors.black,
